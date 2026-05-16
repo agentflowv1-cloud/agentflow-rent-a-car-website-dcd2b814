@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { mockAxiosPost } from '../utils/mocks';
 
 function Book() {
   const [name, setName] = useState('');
@@ -23,7 +23,7 @@ function Book() {
       pickupDate,
       dropoffDate
     };
-    axios.post('/api/booking', booking)
+    mockAxiosPost('/api/booking', booking)
       .then((response) => console.log(response.data))
       .catch((error) => console.error(error));
   };
@@ -82,5 +82,4 @@ function Book() {
     </div>
   );
 }
-
 export default Book;
