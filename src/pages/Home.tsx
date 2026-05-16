@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
-      <ul>
-        <li><Link to="/car-models/1">Car Model 1</Link></li>
-        <li><Link to="/car-models/2">Car Model 2</Link></li>
-      </ul>
+      <h1>Welcome to Car Booking</h1>
+      <p>Book a car now!</p>
+      <Link to="/book">Book Now</Link>
     </div>
   );
 }
+
 export default Home;
