@@ -1,0 +1,15 @@
+.landing-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.landing-page h1 {
+  text-align: center;
+}
+
+.car-model-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
